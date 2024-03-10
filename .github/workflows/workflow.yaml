@@ -1,0 +1,20 @@
+name: 'api-workflow'
+run-name: 'Executando workflow disparado pelo usuário ${{github.actor}}'
+on: [pull_request]
+jobs:
+  testando-api:
+    run-on: ubuntu-latest
+    steps:
+      - name: Clonando repositório
+        uses: actions/checkout@v4
+      
+      - name: Instalando e configurando o nodeJS
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: Instalando as dependências de desenvolvimento
+        run: npm install -D
+      
+      - name: Rodando testes
+        run: npm run test
