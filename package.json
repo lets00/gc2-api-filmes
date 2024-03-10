@@ -1,0 +1,15 @@
+{
+  "name": "gc2-filme-api",
+  "version": "1.0.0",
+  "description": "Uma API de filmes usada como base para as aulas de GC2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Luís Eduardo",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}
