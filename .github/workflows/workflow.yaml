@@ -3,7 +3,7 @@ run-name: 'Executando workflow disparado pelo usuário ${{github.actor}}'
 on: [pull_request]
 jobs:
   testando-api:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Clonando repositório
         uses: actions/checkout@v4
