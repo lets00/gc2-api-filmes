@@ -4,8 +4,10 @@
   "description": "Uma API de filmes usada como base para as aulas de GC2",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
   },
+  "type": "module",
   "keywords": [],
   "author": "Luís Eduardo",
   "license": "MIT",
